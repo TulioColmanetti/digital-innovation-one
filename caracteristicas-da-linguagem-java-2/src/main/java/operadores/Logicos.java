@@ -7,7 +7,8 @@ public class Logicos {
     final var numero = 2;
     final var letra = "A";
 
-    //Sort Circuit
+    //Short Circuit (using double logic operator && or ||)
+//  Java tests only needed conditions - more performance
     if (numero < 5 && letra.equals("A")) {
       System.out.println("Atendeu a condição");
     }
@@ -20,12 +21,13 @@ public class Logicos {
       System.out.println("Lógica maluca...");
     }
 
-    //Non Sort Circuit
-    /*if (verifica(15) | verifica("A")) {
+    //Non Short Circuit (using single logic operator & or |)
+//  Java tests ALL conditions, even when not needed
+    if (verifica(15) | verifica("A")) {
         System.out.println("OK");
     } else {
         System.out.println("Não OK");
-    }*/
+    }
 
   }
 

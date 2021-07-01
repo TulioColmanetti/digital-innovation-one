@@ -18,6 +18,8 @@ public class While {
     do {
       System.out.println("Dentro do do/while...");
     } while (y++ < 1);
+
+    System.out.println(y);
   }
 
 }
